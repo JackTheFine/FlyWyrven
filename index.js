@@ -1,7 +1,7 @@
 const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const { token } = require('./config.json');
-const { MessageEmbed } = require('Discord.js')
+const { MessageEmbed } = require('discord.js')
 require("./deploy-commands")
 
 
@@ -21,14 +21,14 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
   console.log(`Ready! (logged into ${client.user.tag})`);
-  client.user.setActivity("all the flights", {type: "WATCHING"})
-  /*const channel = client.channels.cache.get('1056634339875635260');
+  client.user.setActivity("jack make bots", {type: "WATCHING"})
+  const channel = client.channels.cache.get('1060614681041047683');
   const embed = new MessageEmbed()
       .setTitle('Bot Status:')
       .setDescription('Online')
       .setColor('#03fc2c')
       .setTimestamp()
-  channel.send({ embeds: [embed]});*/
+  channel.send({ embeds: [embed]});
 });
 
 client.on('interactionCreate', async interaction => {
