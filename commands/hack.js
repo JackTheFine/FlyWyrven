@@ -56,13 +56,5 @@ module.exports = {
     setTimeout(function () {
       interaction.editReply(`Finished Hacking ${tohack.displayName}`);
     }, ms(time8));
-    const channel = client.channels.cache.get('1056634339875635260');
-    const embed = new MessageEmbed()
-
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle(`Hacked ${tohack.displayName}`)
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed] });
   },
 };

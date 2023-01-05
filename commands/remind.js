@@ -66,14 +66,6 @@ module.exports = {
             interaction.channel.send({ embeds: [exampleEmbed] });
 
         }, ms(time));
-        const channel = client.channels.cache.get('1056634339875635260');
-        const embed = new MessageEmbed()
-
-            .setAuthor({ name: `${interaction.user.tag}` })
-            .setTitle('ran remind ')
-            .setColor('#03fc2c')
-            .setTimestamp()
-        channel.send({ embeds: [embed] });
         return
     }
 }

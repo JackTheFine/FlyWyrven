@@ -12,14 +12,6 @@ module.exports = {
   async execute(interaction, client) {
     require('moment-duration-format')
     const duration = moment.duration(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
-    const channel = client.channels.cache.get('1056634339875635260');
-    const embed = new MessageEmbed()
-
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle('Ran uptime')
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed] });
     return interaction.reply(duration)
   }
 }

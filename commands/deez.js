@@ -18,18 +18,6 @@ module.exports = {
         const a = interaction.options.getString('bftext');
         const ab = interaction.options.getString('atext');
         interaction.channel.send(`${a} DEEZ NUTS ${ab}`)
-        const channel = client.channels.cache.get('1056634339875635260');
-        const embed = new MessageEmbed()
-
-            .setAuthor({ name: `${interaction.user.tag}` })
-            .setTitle(`Ran deeznuts`)
-            .addFields(
-                { name: 'First Text:', value: `${a}` },
-                { name: 'Last Text:', value: `${ab}` }
-            )
-            .setColor('#03fc2c')
-            .setTimestamp()
-        channel.send({ embeds: [embed] });
         return interaction.reply({ content: 'Message Sent!', ephemeral: true }) //hi
 
     }

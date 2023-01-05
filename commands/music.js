@@ -33,7 +33,7 @@ const connections = new Map();
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("ytstream")
+        .setName("music")
         .setDescription("Enter a YouTube video link (not id) to stream it to an audio channel!")
         .addSubcommand(subcommand =>
             subcommand.setName("endloop")
@@ -101,7 +101,7 @@ module.exports = {
         ),
 
     async execute(interaction, client, options) {
-        await interaction.deferReply({ ephemeral: true });
+        await interaction.deferReply();
 
         const vc = interaction.member.voice.channel;
 

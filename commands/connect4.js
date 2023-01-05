@@ -34,12 +34,5 @@ module.exports = {
     }).startGame()
     const channel = client.channels.cache.get('1056634339875635260');
     const a = interaction.options.getUser('target')
-    const embed = new MessageEmbed()
-
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle(`Ran connect4 with ${a.tag}`)
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed] });
   },
 };

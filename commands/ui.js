@@ -18,14 +18,6 @@ module.exports = {
       .addField("UserID", `${Target.id}`, false)
       .addField("Roles", `${Member.roles.cache.map(r => r).join(' ').replace("@everyone", " ")}`)
       .addField("Server Member Since", `${moment(Member.joinedAt).format('MMMM Do YYYY, h:mm:ss a')}\n**-** ${moment(Member.joinedAt).startOf('day').fromNow()}`)
-    const channel = client.channels.cache.get('1056634339875635260');
-    const embed = new MessageEmbed()
-
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle(`Ran userinfo on ${Target.user.tag}`)
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed] });
     return interaction.reply({ embeds: [Response] })
 
   }

@@ -29,13 +29,5 @@ module.exports = {
       },
       othersMessage: 'You are not allowed to use buttons for this message!',
     }).startGame();
-    const channel = client.channels.cache.get('1056634339875635260');
-    const embed = new MessageEmbed()
-
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle('Ran snake')
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed] });
   },
 };

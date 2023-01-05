@@ -26,13 +26,6 @@ module.exports = {
       .setImage(images[Math.floor(Math.random() * images.length)])
       .setColor("RANDOM");
     interaction.reply({ embeds: [embed] });
-    const channel = client.channels.cache.get('1056634339875635260');
-    const embed1 = new MessageEmbed()
 
-      .setAuthor({ name: `${interaction.user.tag}` })
-      .setTitle('ran fake nitro')
-      .setColor('#03fc2c')
-      .setTimestamp()
-    channel.send({ embeds: [embed1] });
   },
 };

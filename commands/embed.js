@@ -16,7 +16,7 @@ module.exports = {
       .setAuthor({ name: `${abcd}` })
       .setTitle(`${abcde}`)
       .setDescription(`${abcdef}`)
-      .setFooter({ text: `Rambam Embedder` })
+      .setFooter({ text: `FlyWyvren Embedder` })
       .setTimestamp()
     interaction.reply({ content: 'Sent to channel', ephemeral:  true})
     return interaction.channel.send({ embeds: [abc] })

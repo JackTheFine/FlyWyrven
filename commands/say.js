@@ -14,14 +14,6 @@ module.exports = {
         const ttb = interaction.options.getString('tosay')
         const text = ttb.split(' ').slice().join(' ');
         interaction.channel.send(text)
-        const channel = client.channels.cache.get('1056634339875635260');
-        const embed = new MessageEmbed()
-
-            .setAuthor({ name: `${interaction.user.tag}` })
-            .setTitle(`Said ${text}`)
-            .setColor('#03fc2c')
-            .setTimestamp()
-        channel.send({ embeds: [embed] });
         return interaction.reply({ content: 'Message repeated!!', ephemeral: true })
 
     }

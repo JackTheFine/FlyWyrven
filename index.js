@@ -21,14 +21,14 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
   console.log(`Ready! (logged into ${client.user.tag})`);
-  client.user.setActivity("rambam burn down", {type: "WATCHING"})
-  const channel = client.channels.cache.get('1056634339875635260');
+  client.user.setActivity("all the flights", {type: "WATCHING"})
+  /*const channel = client.channels.cache.get('1056634339875635260');
   const embed = new MessageEmbed()
       .setTitle('Bot Status:')
       .setDescription('Online')
       .setColor('#03fc2c')
       .setTimestamp()
-  channel.send({ embeds: [embed]});
+  channel.send({ embeds: [embed]});*/
 });
 
 client.on('interactionCreate', async interaction => {
