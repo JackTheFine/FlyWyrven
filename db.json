@@ -1,0 +1,28 @@
+{
+    "flights": {
+        "u53d8dbam": {
+            "id": "u53d8dbam",
+            "host": "rwngjlngan krgiqwurh cgrbeyicgiuteGFBDGF",
+            "time": "00;00",
+            "date": "1/1/1",
+            "departure": "FNUIOAWHFIEUBHOIRAWOUIGHFUIOA",
+            "arrival": "NGWRAOIGNIOANEWPIGRIOEW",
+            "gate": "IVN",
+            "classes": "ovnga",
+            "aircraft": "norw",
+            "messageId": "1072577402514985001"
+        },
+        "23pztee6j": {
+            "id": "23pztee6j",
+            "host": "host name",
+            "time": "time",
+            "date": "date",
+            "departure": "departure time",
+            "arrival": "arrival time",
+            "gate": "gate",
+            "classes": "clases",
+            "aircraft": "aircraft",
+            "messageId": "1072609685850554368"
+        }
+    }
+}

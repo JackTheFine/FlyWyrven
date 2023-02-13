@@ -25,7 +25,7 @@ module.exports = {
             .setColor('#E0082F')
             .setTitle('Reminder set.')
             .setURL('')
-            .setAuthor({ name: 'Rambam Bot', iconURL: '', url: '' })
+            .setAuthor({ name: 'FlyValle', iconURL: '', url: '' })
             .setDescription(``)
             .setThumbnail('')
             .addFields(
@@ -37,7 +37,7 @@ module.exports = {
             //.addField('Inline field title', 'Some value here', true)
             .setImage('')
             .setTimestamp()
-            .setFooter({ text: 'Rambam Bot', iconURL: '' });
+            .setFooter({ text: 'FlyValle', iconURL: '' });
 
         interaction.reply({ embeds: [exampleEmbed1] });
 
@@ -48,7 +48,7 @@ module.exports = {
                 .setColor('#088BE0')
                 .setTitle('Reminder!')
                 .setURL('')
-                .setAuthor({ name: 'FRambam Bot', iconURL: '', url: '' })
+                .setAuthor({ name: 'FlyValle', iconURL: '', url: '' })
                 .setDescription('Reminder for ' + `<@${interaction.user.id}>`)
                 .setThumbnail('')
                 .addFields(
@@ -60,7 +60,7 @@ module.exports = {
                 //.addField('Inline field title', 'Some value here', true)
                 .setImage('')
                 .setTimestamp()
-                .setFooter({ text: 'Rambam Bot', iconURL: '' });
+                .setFooter({ text: 'FlyValle', iconURL: '' });
 
 
             interaction.channel.send({ embeds: [exampleEmbed] });

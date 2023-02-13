@@ -8,7 +8,6 @@ module.exports = {
     .setDescription('gives you a dadjoke'),
 
   async execute(interaction, client) {
-    // To get a random dad joke
     giveMeAJoke.getRandomDadJoke(function (joke) {
 
 

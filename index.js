@@ -21,7 +21,7 @@ for (const file of commandFiles) {
 
 client.once('ready', () => {
   console.log(`Ready! (logged into ${client.user.tag})`);
-  client.user.setActivity("jack make bots", {type: "WATCHING"})
+  client.user.setActivity("all these flights", {type: "WATCHING"})
   const channel = client.channels.cache.get('1060614681041047683');
   const embed = new MessageEmbed()
       .setTitle('Bot Status:')

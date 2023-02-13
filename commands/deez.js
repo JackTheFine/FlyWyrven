@@ -18,7 +18,7 @@ module.exports = {
         const a = interaction.options.getString('bftext');
         const ab = interaction.options.getString('atext');
         interaction.channel.send(`${a} DEEZ NUTS ${ab}`)
-        return interaction.reply({ content: 'Message Sent!', ephemeral: true }) //hi
+        return interaction.reply({ content: 'Message Sent!', ephemeral: true })
 
     }
 }
